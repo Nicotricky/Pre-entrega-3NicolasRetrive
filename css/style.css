@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/meliodas-meliodas-sin-of-wrath-nanatsu-no-taizai-the-seven-deadly-sins-hd-wallpaper-preview.jpg);
+}
+
+/**nav**/
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration-style: dotted;
+  text-decoration: dashed;
+  color: white;
+  margin-left: 3rem;
+}
+
+/**header**/
+.header {
+  background-attachment: fixed;
+  background-color: rgba(102, 46, 46, 0.596);
+}
+
+#primera-seccion {
+  margin: 5px;
+  padding: 2rem;
+  text-align: center;
+  color: rgb(124, 40, 40);
+  text-decoration: underline;
+}
+
+#segunda-seccion {
+  padding: 3rem;
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(124, 40, 40);
+  text-decoration: underline;
+}
+
+/**article**/
+article {
+  background-color: rgb(141, 27, 27);
+  color: rgb(247, 240, 240);
+  display: flex;
+  padding: 2rem;
+  text-align: center;
+}
+
+/**footer**/
+footer {
+  background-color: rgb(124, 41, 41);
+  display: flex;
+  margin-left: 3px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+}
