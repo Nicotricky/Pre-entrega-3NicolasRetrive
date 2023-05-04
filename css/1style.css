@@ -8,6 +8,40 @@ body {
   background-image: url(../images/meliodas-meliodas-sin-of-wrath-nanatsu-no-taizai-the-seven-deadly-sins-hd-wallpaper-preview.jpg);
 }
 
+.animated-text {
+  background: linear-gradient(90deg, red, yellow, red) 0 0 / 400% 100%;
+  animation: move-bg 4s infinite linear;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
+
+main {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+img {
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(10px);
+  }
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -42,24 +76,102 @@ section {
   margin: 30px;
   display: list-item;
   align-items: center;
-  text-align: center;
-  color: rgba(190, 18, 18, 0.74);
+  color: rgb(124, 40, 40);
+}
+
+ul {
+  align-items: right;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  color: #721d1d;
+  animation: iluminar 1.4s linear infinite;
+}
+
+@keyframes iluminar {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  }
+}
+
+ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+ul li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+ul li:nth-child(7) {
+  animation-delay: 0.6s;
+}
+ul li:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.card {
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(10px);
+  }
+}
+
+#texto {
+  display: inline-block;
+  vertical-align: top;
 }
 
 footer {
-  background-color: rgba(102, 46, 46, 0.596);
+  background-color: rgb(124, 41, 41);
   display: flex;
   margin-left: 3px;
   margin-left: 5rem;
   margin-right: 5rem;
   justify-content: space-between;
   text-align: center;
-  color: white;
 }
 
-main {
-  color: rgb(124, 40, 40);
+h5 .mb-3 {
+  background-image: linear-gradient(rgb(231, 12, 12), yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.primera-seccion {
-  text-align: left;
+
+.text-secondary {
+  background-image: linear-gradient(rgb(231, 12, 12), yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

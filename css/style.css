@@ -6,6 +6,16 @@
 
 body {
   background-image: url(../images/meliodas-meliodas-sin-of-wrath-nanatsu-no-taizai-the-seven-deadly-sins-hd-wallpaper-preview.jpg);
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /**nav**/
@@ -48,17 +58,131 @@ body {
   text-decoration: underline;
 }
 
+h1 {
+  color: rgb(92, 14, 14);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 4rem;
+  letter-spacing: 15px;
+  text-shadow: 4px 4px 5px #fafafa;
+  animation: flotar 3s linear infinite alternate;
+}
+
+@keyframes flotar {
+  form {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+
+img {
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(10px);
+  }
+}
+
+.title {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: 10s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ul {
+  align-items: right;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  color: #721d1d;
+  animation: iluminar 1.4s linear infinite;
+}
+
+@keyframes iluminar {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  90% {
+    color: #484848;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900, 0 0 50px #ff6c00;
+  }
+}
+
+ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+ul li:nth-child(2) {
+  animation-delay: 0.1s;
+}
+ul li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+ul li:nth-child(4) {
+  animation-delay: 0.3s;
+}
+ul li:nth-child(5) {
+  animation-delay: 0.4s;
+}
+ul li:nth-child(6) {
+  animation-delay: 0.5s;
+}
+ul li:nth-child(7) {
+  animation-delay: 0.6s;
+}
+ul li:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.animate__backInLeft {
+  -webkit-animation-name: backInLeft;
+  animation-name: backInLeft;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 #segunda-seccion {
   padding: 3rem;
   text-align: center;
-  margin-top: 50px;
   color: rgb(124, 40, 40);
   text-decoration: underline;
 }
 
 /**article**/
 article {
-  background-color: rgb(141, 27, 27);
+  background-color: rgb(124, 40, 40);
   color: rgb(247, 240, 240);
   display: flex;
   padding: 2rem;
@@ -75,4 +199,18 @@ footer {
   justify-content: space-between;
   text-align: center;
   color: white;
+}
+
+h5 .mb-3 {
+  background-image: linear-gradient(rgb(231, 12, 12), yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-secondary {
+  background-image: linear-gradient(rgb(231, 12, 12), yellow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
